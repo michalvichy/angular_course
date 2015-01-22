@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
 	<title>Angular Course</title>
 	<meta charset='utf-8'>
 	<link rel='stylesheet' href='css/bootstrap.min.css'>
 </head>
-<body>
+<body class='container'>
+	<h2>{{hello % 2| currency}}</h2>
+	<input type="number" ng-model='hello' placeholder="Say hello">
+	<input type="datetime" ng-model='date' placeholder="date">
+	<p>{{date | date}}</p>
 	<script src='js/angular.min.js'></script>
 	<script src='js/app.js'></script>
 </body>
